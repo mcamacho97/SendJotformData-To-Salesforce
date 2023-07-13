@@ -25,14 +25,14 @@ Resources:
     Properties:
       Name: !Ref JotformCredentialsSecretName
       Description: Api Key from Jotform
-      SecretString: '{"api_key":"0d2e5f8a2000af450b696e182bff8e74"}'
+      SecretString: '{"api_key":"apikey"}'
   
   AuthorizerSecret:
     Type: 'AWS::SecretsManager::Secret'
     Properties:
       Name: !Ref AuthorizerSecretName
       Description: Api Key from Authorizer API
-      SecretString: '{"api_key":"DBn7NPl5NM227GkMcn94J9gquD3yojae4NbJ9hd9"}'
+      SecretString: '{"api_key":"apikey"}'
   
   JotformDataBucket:
     Type: 'AWS::S3::Bucket'
